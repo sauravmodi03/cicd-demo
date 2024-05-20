@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cicd
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgres://stage.db.server:3308/jpa-db
+    jpa:
+      generate-ddl: true
+      show-sql: true
